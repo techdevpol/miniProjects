@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  /*Center the calculator container horizontaly*/
+  align-items: center;
+  /*Center the calculator container verticaly*/
+  height: 100vh;
+  background: linear-gradient(265deg, #62dbff, #1ad059, #4638ff);
+  background-size: 600% 600%;
+
+  -webkit-animation: gradientAnimation 22s ease infinite;
+  -moz-animation: gradientAnimation 22s ease infinite;
+  animation: gradientAnimation 22s ease infinite;
+}
+@-webkit-keyframes gradientAnimation {
+  0% {
+    background-position: 0% 94%;
+  }
+  50% {
+    background-position: 100% 7%;
+  }
+  100% {
+    background-position: 0% 94%;
+  }
+}
+@-moz-keyframes gradientAnimation {
+  0% {
+    background-position: 0% 94%;
+  }
+  50% {
+    background-position: 100% 7%;
+  }
+  100% {
+    background-position: 0% 94%;
+  }
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 94%;
+  }
+  50% {
+    background-position: 100% 7%;
+  }
+  100% {
+    background-position: 0% 94%;
+  }
+}
+#calculator {
+  font-family: Arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0.172);
+  border-radius: 15px;
+  /*The container calculator cant be bigger than that*/
+  max-width: 500px;
+  /*If anything goes past the container, it will hide( so no result goes out from the display)*/
+  overflow: hidden;
+
+  -webkit-box-shadow: 2px 0px 73px 4px rgba(0, 0, 0, 0.83);
+  -moz-box-shadow: 2px 0px 73px 4px rgba(0, 0, 0, 0.83);
+  box-shadow: 2px 0px 73px 4px rgba(0, 0, 0, 0.83);
+}
+#display {
+  width: 100%;
+  padding: 20px;
+  font-size: 5rem;
+  text-align: left;
+  border: none;
+  background-color: rgba(31, 31, 31, 0.518);
+  color: white;
+}
+button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(41, 41, 41, 0.847);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(74, 74, 74);
+}
+.hidden {
+  background-color: rgba(0, 0, 0, 0);
+}
+.hidden:hover {
+  background-color: rgba(0, 0, 0, 0);
+  cursor: default;
+}
+/*TO CHANGE PROPERTY ON CLICK*/
+button:active {
+  background-color: rgb(99, 99, 99);
+}
+.operator-btn {
+  background-color: rgba(227, 112, 35, 0.863);
+}
+.operator-btn:hover {
+  background-color: rgb(255, 137, 58);
+}
+.operator-btn:active {
+  background-color: rgb(254, 151, 82);
+}
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 25px;
+}
