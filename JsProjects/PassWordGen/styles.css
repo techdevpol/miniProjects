@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  background: rgba(3, 3, 96, 0.833);
+  background: #343838;
   color: white;
 }
 
@@ -31,8 +31,8 @@ body {
   font-size: 45px;
 }
 .container h1 span {
-  color: #019f55;
-  border-bottom: 4px solid #019f55;
+  color: #00dffc;
+  border-bottom: 4px solid #00dffc;
   padding: 7px;
 }
 .display img {
@@ -52,7 +52,7 @@ body {
 .container button {
   border: 0;
   outline: 0;
-  background: #019f55;
+  background: #008c9e;
   color: #fff;
   font-size: 22px;
   font-weight: 300;
@@ -62,4 +62,9 @@ body {
   padding: 16px 26px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.container button:hover {
+  background: #00b4cc;
+  transition: 1s;
 }
